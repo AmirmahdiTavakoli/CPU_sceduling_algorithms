@@ -47,13 +47,6 @@ This will execute the scheduler tests and print the calculated vs. expected metr
 - SJF
 - Round Robin (with specified quantum)
 
-If all assertions pass, you will see:
-
-```
->>> Test Case X PASSED.
-...
-ALL TESTS PASSED.
-```
 
 ## How to Clean
 
@@ -69,9 +62,24 @@ make clean
 ==== Test Case 1 ====
 FCFS: Calculated: Turnaround: 15.00, Waiting: 7.33, Response: 7.33
       Expected:   Turnaround: 15.00, Waiting: 7.33, Response: 7.33
-SJF:  ...
-RR (Quantum = 4): ...
+SJF:  Calculated: Turnaround: 15.00, Waiting: 7.33, Response: 7.33
+      Expected:   Turnaround: 15.00, Waiting: 7.33, Response: 7.33
+RR (Quantum = 4): Calculated: Turnaround: 19.33, Waiting: 11.67, Response: 3.00
+         Expected:   Turnaround: 19.33, Waiting: 11.67, Response: 3.00
 >>> Test Case 1 PASSED.
+
+==== Test Case 2 ====
+FCFS: Calculated: Turnaround: 5.67, Waiting: 1.67, Response: 1.67
+      Expected:   Turnaround: 5.67, Waiting: 1.67, Response: 1.67
+SJF:  Calculated: Turnaround: 5.67, Waiting: 1.67, Response: 1.67
+      Expected:   Turnaround: 5.67, Waiting: 1.67, Response: 1.67
+RR (Quantum = 2): Calculated: Turnaround: 5.67, Waiting: 1.67, Response: 1.00
+         Expected:   Turnaround: 5.67, Waiting: 1.67, Response: 1.00
+>>> Test Case 2 PASSED.
+
+==== Test Case 3 ====
+....
+
 ```
 
 ## Notes
